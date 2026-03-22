@@ -1,10 +1,17 @@
 // ==UserScript==
 // @name         Amazon Product Blocker
-// @namespace    http://tampermonkey.net/
+// @namespace    https://www.google.com/
 // @version      0.1
 // @description  Block Amazon product listings and persist settings
 // @author       You
-// @match        https://www.amazon.com/*
+// @match        https://*.amazon.com/*
+// @match        https://*.amazon.co.uk/*
+// @match        https://*.amazon.de/*
+// @match        https://*.amazon.ca/*
+// @match        https://*.amazon.com.au/*
+// @match        https://*.amazon.fr/*
+// @match        https://*.amazon.it/*
+// @match        https://*.amazon.es/*
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_deleteValue
