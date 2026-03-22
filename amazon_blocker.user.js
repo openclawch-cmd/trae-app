@@ -49,8 +49,10 @@
 
     // Function to add a block button to each listing
     function addBlockButtons() {
+        console.log('Attempting to add block buttons...');
         // This selector might need adjustment based on Amazon's ever-changing DOM
         const listings = document.querySelectorAll('[data-asin]'); 
+        console.log(`Found ${listings.length} listings with data-asin attribute.`);
 
         listings.forEach(listing => {
             if (!listing.querySelector('.block-button-added')) { // Avoid adding multiple buttons
