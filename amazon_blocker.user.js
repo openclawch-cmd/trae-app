@@ -63,14 +63,8 @@
                     blockListing(listing);
                 });
 
-                // Find a good place to insert the button
-                const titleElement = listing.querySelector('h2 a span'); // Common path for title
-                if (titleElement) {
-                    titleElement.parentNode.appendChild(button);
-                } else {
-                    // Fallback if title element not found, append to the listing itself
-                    listing.prepend(button); 
-                }
+                // Prepend the button directly to the listing for robustness
+                listing.prepend(button);
             }
         });
     }
