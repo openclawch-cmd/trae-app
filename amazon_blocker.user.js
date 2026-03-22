@@ -19,6 +19,7 @@
 
 (function() {
     'use strict';
+    console.log('Amazon Product Blocker script started.');
 
     const BLOCKED_LISTINGS_KEY = 'blockedAmazonListings';
 
